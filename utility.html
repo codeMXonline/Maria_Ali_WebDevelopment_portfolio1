@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>My Utility Projects</title>
+  <style>
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f5e6ff;
+}
+
+.main-child {
+  padding: 40px 20px;
+  background-color: #db7dff;
+  border-radius: 20px;
+  margin: 50px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+nav h1 {
+  font-size: 36px;
+  color: #580d75;
+  font-weight: bold;
+}
+
+.container-utility {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.cards {
+  width: 300px;
+  height: 350px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+}
+
+.cards:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-top {
+  background: linear-gradient(to right, #b560e0, #580d75);
+  color: white;
+  padding: 30px 20px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.card-top h1 {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.card-bottom {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-bottom h2 {
+  color: #580d75;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.card-bottom i {
+  font-size: 24px;
+  color: #580d75;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+      <div class="main-child">
+    <nav>
+        <h1>My Utility Projects</h1>
+    </nav>
+    <div class="container-utility">
+      <div class="cards">
+        <a href="./Utility project folder/Weather Forecast assignment/index.html" target="_blank" style="text-decoration: none;">
+        <div class="card-top">
+          <h1>WEATHER FORECAST APPLICATION</h1>
+        </div>
+        <div class="card-bottom">
+          <h2>"Displays real-time weather updates using API data."</h2>
+          <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 30px; margin-top: 15px; color: #580d75;"></i>
+        </div>
+        </a>
+      </div>
+      
+      <div class="cards">
+        <a href="./Utility project folder/Student-Registration-Form/index.html" target="_blank" style="text-decoration: none;">
+         <div class="card-top">
+           <h1>STUDENT APPLICATION FORM</h1>
+         </div>
+        <div class="card-bottom">
+          <h2>"Form to collect and validate student details."</h2>
+          <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 30px; margin-top: 15px; color: #580d75;"></i>
+        </div>
+        </a>
+      </div>
+
+      <div class="cards">
+        <a href="./Utility project folder/Calculator/calculator-index.html" target="_blank" style="text-decoration: none;">
+         <div class="card-top">
+           <h1>CALCULATOR</h1>
+         </div>
+        <div class="card-bottom">
+          <h2>"Simple calculator for basic arithmetic operations instantly."</h2>
+          <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 30px; margin-top: 15px; color: #580d75;"></i>
+        </div>
+        </a>
+      </div>
+
+      <div class="cards">
+        <a href="./Utility project folder/To Do list Project/index.html" target="_blank" style="text-decoration: none;">
+         <div class="card-top">
+           <h1>TO-DO LIST FORM</h1>
+         </div>
+         <div class="card-bottom">
+          <h2>"Making a List of activities"</h2>
+          <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 30px; margin-top: 15px; color: #580d75;"></i>
+        </div>
+        </a>
+      </div>
+    </div>
+    </div>
+    
+    
+  </header>
+</body>
+</html>

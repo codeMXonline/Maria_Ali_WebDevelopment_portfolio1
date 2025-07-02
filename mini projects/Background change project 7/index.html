@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background changing using Javascript</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .colorbox{
+      width: 550px;
+      height: 80px;
+      background-color: white;
+      box-shadow:0 3px 6px rgba(0, 0, 0, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0.2rem;
+    }
+    button{
+      width: 60px;
+      height: 60px;
+      display: inline-block;
+      border-radius: 50%;
+      cursor: pointer;
+      border: none;
+    }
+    #one{
+      background-color: #e58e26;
+    }
+    #two{
+      background-color: #f9b4ab;
+    }
+    #three{
+      background-color: #B1FB17;
+    }
+    #four{
+      background-color: #78e08f;
+    }
+    #five{
+      background-color: #fd79a8;
+    }
+    button:hover{
+      width: 72px;
+      height: 72px;
+    }
+    h1{
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: 300;
+      color: brown;
+      align-items: center;
+      height: 20vh;
+    }
+    h2{
+      text-align: center;
+      color: brown;
+      font-size: 15px;
+      margin: 80px;
+    }
+  </style>
+</head>
+<body>
+    <h1>Color Changing background.</h1>
+    <div class="colorbox">
+      <button id="one"></button>
+      <button id="two"></button>
+      <button id="three"></button>
+      <button id="four"></button>
+      <button id="five"></button>
+    </div>
+    <h2>
+      Follow.Share.Like.Comment</br>
+         @_content_lee
+    </h2>
+
+
+  <script>
+    document.getElementById("one").addEventListener("click",()=>{
+      document.querySelector("body").style.backgroundColor="#e58e26"
+    })
+
+    document.getElementById("two").addEventListener("click",()=>{
+      document.querySelector("body").style.backgroundColor="#f9b4ab"
+    })
+
+    document.getElementById("three").addEventListener("click",()=>{
+      document.querySelector("body").style.backgroundColor="#B1FB17"
+    })
+    
+    document.getElementById("four").addEventListener("click",()=>{
+      document.querySelector("body").style.backgroundColor="#78e08f"
+    })
+    
+    document.getElementById("five").addEventListener("click",()=>{
+      document.querySelector("body").style.backgroundColor="#fd79a8"
+    })
+  </script>
+</body>
+</html>

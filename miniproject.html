@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>My Mini Projects</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fffde7;
+}
+
+.main-child {
+  background-color: #ffea47;
+  border-radius: 20px;
+  margin: 50px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(255, 230, 0, 0.6);
+}
+
+nav {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+nav h1 {
+  text-align: center;
+  font-size: 44px;
+  font-weight: bold;
+  color: #c29700;
+}
+
+.container-utility {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.cards {
+  width: 300px;
+  height: 320px;
+  perspective: 1000px;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.cards:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.card-front {
+  background-color: white;
+  color: #333;
+}
+
+.card-front h1 {
+  color: #c29700;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-back {
+  background-color: #fff7ae;
+  transform: rotateY(180deg);
+  color: #2e2e2e;
+}
+
+.card-back h2 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (min-width: 768px) and (max-width:1023px){
+  .container-utility {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+}
+
+  </style>
+</head>
+<body>
+  <header>
+      <div class="main-child">
+    <nav>
+        <h1>My Mini Projects</h1>
+    </nav>
+    <div class="container-utility">
+      <div class="cards">
+          <div class="card-inner">
+            <div class="card-front">
+              <h1>STUDENT REGISTRATION FORM</h1>
+            </div>
+            <div class="card-back">
+              <a href="./mini projects/Form Project 3/formindex.html" target="_blank" style="text-decoration: none;color: black;">
+              <h2>"Collects and validates student details with user-friendly input fields."</h2>
+                <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 30px; margin-top: 20px;text-align: center; color: #c29700;"></i>
+              </a>
+            </div>
+          </div>
+      </div>
+
+      <div class="cards">
+        <div class="card-inner">
+          <div class="card-front">
+            <h1>SHORT STORYTELLING</h1>
+          </div>
+          <div class="card-back">
+            <a href="./mini projects/Last letter story project-8/index.html" target="_blank" style="text-decoration: none;color: black;">
+            <h2>"Using asynchronous JS function for storytelling."</h2>
+            <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 30px; margin-top: 20px;text-align: center; color: #c29700;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+        <div class="cards">
+          <div class="card-inner">
+            <div class="card-front">
+              <h1>LANDING PAGE</h1>
+            </div>
+            <div class="card-back">
+              <a href="./mini projects/Landing Page project 4/landingindex.html" target="_blank" style="text-decoration: none;color: black;">
+              <h2>"A clean landing page crafted to highlight product or service features."</h2>
+              <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 30px; margin-top: 20px;text-align: center; color: #c29700;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      <div class="cards">
+          <div class="card-inner">
+            <div class="card-front">
+              <h1>DIGITAL ENVELOPE</h1>
+            </div>
+            <div class="card-back">
+              <a href="./mini projects/Letter Project 1/index.html" target="_blank" style="text-decoration: none;color: black;">
+              <h2>"Digital envelope using transition and animations."</h2>
+              <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 30px; margin-top: 20px;text-align: center; color: #c29700;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+     <div class="cards">
+        <div class="card-inner">
+          <div class="card-front">
+            <h1>LOADING APPLICATION</h1>
+          </div>
+          <div class="card-back">
+            <a href="./mini projects/Loading Project 6/index.html" target="_blank" style="text-decoration: none;color: black;">
+            <h2>"A smooth bouncing balls animation used as a modern loading indicator."</h2>
+            <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 30px; margin-top: 20px;text-align: center; color: #c29700;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+       <div class="cards">
+        <div class="card-inner">
+          <div class="card-front">
+            <h1>MOTIVATION PROJECT</h1>
+          </div>
+          <div class="card-back">
+            <a href="./mini projects/Transition and animation project/index.html" target="_blank" style="text-decoration: none;color: black;">
+            <h2>"Showing paths of success using animation and transition"</h2>
+            <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 30px; margin-top: 20px;text-align: center; color: #c29700;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card-inner">
+          <div class="card-front">
+            <h1>CHANGING BACKGROUND COLOR</h1>
+          </div>
+          <div class="card-back">
+            <a href="./mini projects/Background change project 7/index.html" target="_blank" style="text-decoration: none;color: black;">
+            <h2>"Changing background-color using JavaScript"</h2>
+            <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 30px; margin-top: 20px;text-align: center; color: #c29700;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card-inner">
+          <div class="card-front">
+            <h1>PARALLAX WEBSITE</h1>
+          </div>
+          <div class="card-back">
+            <a href="./mini projects/Parallax website project 5/parallaxindex.html" target="_blank" style="text-decoration: none;color: black;">
+            <h2>"Website design using positions"</h2>
+            <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 30px; margin-top: 20px;text-align: center; color: #c29700;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </header>
+</body>
+</html>

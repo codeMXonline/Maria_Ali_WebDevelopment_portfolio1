@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>My Games</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fff6f6;
+}
+
+.main-child {
+  background-color: #e95c5e;
+  border-radius: 20px;
+  margin: 50px;
+  padding: 30px;
+  box-shadow: 0 0 15px #ffea47;
+}
+
+nav {
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+nav h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  color: #e95c5e;
+}
+
+.container-games {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.cards {
+  width: 280px;
+  height: 320px;
+  background-color: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  perspective: 1000px;
+}
+
+.cards:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px #ffea47b7;
+}
+
+.card-top {
+  background-color: #ffb9b9;
+  padding: 40px 20px;
+  color: #2e0000;
+  border-bottom: 1px solid #e95c5e;
+}
+
+.card-top h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-bottom {
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 140px;
+}
+
+.card-bottom h2 {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-bottom i {
+  font-size: 24px;
+  color: #e95c5e;
+  transition: transform 0.3s;
+}
+
+.cards:hover i {
+  transform: scale(1.2);
+}
+
+  </style>
+</head>
+<body>
+  <header>
+      <div class="main-child">
+    <nav>
+        <h1>My Games Projects</h1>
+    </nav>
+    <div class="container-games">
+      <div class="cards">
+         <a href="./games folder/Rock-paper-scissor.images/10-rock paper scissor.html" target="_blank" style="text-decoration: none;">
+        <div class="card-top">
+          <h1>ROCK-PAPER-SCISSOR </h1>
+        </div>
+        <div class="card-bottom">
+          <h2>"Classic hand game of chance and strategy."</h2>
+          <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 30px; margin-top: 15px; color: #e95c5e;"></i>
+        </div>
+        </a>
+      </div>
+
+      <div class="cards">
+         <a href="./games folder/Tic Tac Toe game/index.html" target="_blank" style="text-decoration: none;">
+         <div class="card-top">
+           <h1>TIC TAC TOE</h1>
+         </div>
+         <div class="card-bottom">
+          <h2>"Strategic grid game to align three symbols."</h2>
+          <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 30px; margin-top: 15px; color: #e95c5e;"></i>
+        </div>
+        </a>
+      </div>
+    </div>
+    </div>
+  </header>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Keep Moving - Animation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 30px 10px;
+      background-color: #111;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      text-align: center;
+      font-size: 22px;
+      color: #f0f0f0;
+    }
+
+    .box-track {
+      width: 90vw;
+      max-width: 800px;
+      height: 80px;
+      margin-bottom: 30px;
+      position: relative;
+      border-bottom: 2px dashed #555;
+    }
+
+    .box {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      animation-timing-function: linear;
+    }
+
+    .glow {
+      box-shadow: 0 0 10px rgba(0,255,255,0.7), 0 0 20px rgba(0,255,255,0.5);
+    }
+
+    /* BOX 1 */
+    #box1 {
+      background-color: #00bcd4;
+      animation: move1 7s forwards;
+    }
+
+    @keyframes move1 {
+      from { left: 0; }
+      to { left: 95%; }
+    }
+
+    /* BOX 2 */
+    #box2 {
+      background-color: #ff9800;
+      animation: move2 10s forwards ;
+    }
+
+    @keyframes move2 {
+      from { left: 0;transform: skewX(0deg); }
+      to { left: 95%;transform: skewX(45deg); }
+    }
+
+    /* BOX 3 */
+    #box3 {
+      background-color: #4caf50;
+      animation: rotateMove 5s forwards;
+    }
+
+    @keyframes rotateMove {
+      0%   { left: 0; transform: rotate(0deg);transform: skewY(0deg); }
+      100% { left: 95%; transform: rotate(360deg);transform: skewY(55deg); }
+    }
+
+    /* BOX 4 */
+    #box4 {
+      background-color: #e91e63;
+      animation: stretchX 7s forwards;
+    }
+
+    @keyframes stretchX {
+      0%   { left: 0; transform: scaleX(0.9); }
+      100% { left: 95%; transform: scaleX(2.2); }
+    }
+
+    /* BOX 5 */
+    #box5 {
+      background-color: #9c27b0;
+      animation: stretchY 7s forwards;
+    }
+
+    @keyframes stretchY {
+      0%   { left: 0; transform: scaleY(0.2); }
+      100% { left: 95%; transform: scaleY(1.9); }
+    }
+
+    .caption {
+      margin-top: -20px;
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>No matter the pace, path or shape — Just keep moving forward.</h1>
+
+  <div class="box-track">
+    <div class="box glow" id="box1"></div>
+    <div class="caption">STEADY PATH</div>
+  </div>
+
+  <div class="box-track">
+    <div class="box glow" id="box2"></div>
+    <div class="caption">YOU ARE AT YOUR OWN PACE</div>
+  </div>
+
+  <div class="box-track">
+    <div class="box glow" id="box3"></div>
+    <div class="caption">SPINNING TO OVERCOME HURDLES</div>
+  </div>
+
+  <div class="box-track">
+    <div class="box glow" id="box4"></div>
+    <div class="caption">EXPANDING THROUGH EFFORTS</div>
+  </div>
+
+  <div class="box-track">
+    <div class="box glow" id="box5"></div>
+    <div class="caption">GROWING EACH DAY</div>
+  </div>
+   <p style="text-align: center;padding: 0px;margin: 0px;">LIKE.SHARE.COMMENT.FOLLOW </br> @_content_lee</p>
+
+</body>
+</html>
