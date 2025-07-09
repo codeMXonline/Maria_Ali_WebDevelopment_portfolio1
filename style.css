@@ -45,6 +45,7 @@ nav {
   height: 400px;
 }
 .left-header img{
+  display:none;
   width: 300px;
   height: 300px;
   border: 2px solid #fdb7ba;
